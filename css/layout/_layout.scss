@@ -1,0 +1,229 @@
+// common style
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #ccc;
+}
+
+#fp-nav ul li .active span {
+  background: $public_color !important;
+}
+
+.down_sign {
+  margin-left: -3px;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  width     : 100%;
+  height    : auto;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
+
+  .logo_img {
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+
+  .text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 4.4px;
+    font-size  : 22px;
+    color      : #ffffff;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }
+}
+
+$container_height: 517px;
+.container {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: $container_height;
+  line-height: $container_height;
+  padding: 0 13%;
+  @media screen and (max-width: 1280px) {
+    padding: 0 5%;
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+  }
+  font-size: 0;
+  text-align: center;
+  color: #fff;
+
+  .top {
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 20px;
+    padding-right: 10px;
+    @media screen and (max-width: 768px) {
+      float: right;
+      padding-right: 0;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .h1 {
+      margin-bottom: 20px;
+      padding-right: 10px;
+      line-height: 50px;
+      font-weight: 400;
+      font-size: 48px;
+      color: $public_color;
+      text-align: right;
+      -webkit-text-shadow: 5px 0px 0px #6D9EEB;
+      -moz-text-shadow: 5px 0px 0px #6D9EEB;
+      -ms-text-shadow: 5px 0px 0px #6D9EEB;
+      text-shadow: 5px 0px 0px #6D9EEB;
+      white-space: nowrap;
+
+      @media screen and (max-width: 768px) {
+        padding-right: 0;
+        padding-left: 10px;
+        white-space: normal;
+        line-height: 1;
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    }
+
+    .text {
+      text-align: right;
+      line-height: 28px;
+      padding-right: 10px;
+
+      @media screen and (max-width: 768px) {
+        text-align: left;
+        @include text_multiLine_ellipsis(8, 24px);
+        padding-right: 0;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .center {
+    padding: 10px;
+
+    @media screen and (max-width: 432px) {
+      padding: 5px;
+    }
+  }
+
+  .bottom {
+    vertical-align: middle;
+    font-size: 26px;
+    line-height: 20px;
+
+    p { margin-top: 30px; }
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      right: 0;
+      bottom: 30%;
+      font-size: 14px;
+
+      p { margin-top: 10px; }
+      img { width: 50px; }
+    }
+  }
+}
+
+/** ↓↓↓↓↓↓ page 1 ↓↓↓↓↓↓ **/
+#page_1 {
+  background             : url("../img/BG-1.png") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -ms-background-size    : cover;
+  background-size        : cover;
+
+  .header {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding-left : 55px;
+    padding-right: 62px;
+    @media screen and (max-width: 800px) {
+      padding: 10px;
+      top: 0;
+    }
+    width        : 100%;
+    height       : 54px;
+
+    .circle {
+      @media screen and (max-width: 768px) {
+        width: 35px;
+      }
+    }
+
+    .icon {
+      width: 40px;
+      margin: 0 10px;
+      @media screen and (max-width: 800px) {
+        padding-top: 10px;
+        margin: 0;
+      }
+      display: block;
+      text-align: center;
+    }
+  }
+}
+/** ↑↑↑↑↑↑ page 1 ↑↑↑↑↑↑ **/
+
+/** ↓↓↓↓↓↓ public ↓↓↓↓↓↓ **/
+#page_1,
+#page_2,
+#page_3,
+#page_4,
+#page_5,
+#page_6,
+#page_7,
+#page_8 {
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-top: 16%;
+  overflow: hidden;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 22%;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding-top: 28%;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 40%;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-top: 55%;
+  }
+}
+
+#page_2,
+#page_3,
+#page_4,
+#page_5,
+#page_6,
+#page_7,
+#page_8 {
+  background             : url("../img/BG-2.png") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -ms-background-size    : cover;
+  background-size        : cover;
+}
